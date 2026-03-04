@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="UTF-8"/></head>
+<body>
+<script>
+var u=new URLSearchParams(location.search).get('url');
+if(u)location.replace('/.netlify/functions/proxy?url='+encodeURIComponent(u));
+else document.body.innerHTML='<p style="color:#fff;font-family:sans-serif;padding:20px">Alert Proxy Online</p>';
+</script>
+</body>
+</html>
